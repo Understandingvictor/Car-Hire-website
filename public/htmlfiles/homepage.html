@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cssfiles/homepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>Document</title>
+</head>
+<body class="theBody">
+    <center>
+        <header>
+            <div class="header">
+                <div><h1>DRIVE YOUR DREAM CAR</h1></div>
+                <div><img src="/cars/lamborghini.png" alt="lamborghini" width="70"></div>
+            </div>            
+        </header>
+        <nav>
+            <ul class="navList">
+                <button class="carButton btns" onclick="toggleContainers(0)"><li>Cars</li></button>
+                <button class="contact btns" onclick="toggleContainers(1)"><li>Contact</li></button>
+                <button class="about btns" onclick="toggleContainers(2)"><li>About</li></button>
+            </ul>
+        </nav>
+        <div class="homepageContainer">
+                <h1 class="featured">FEATURED <br><span>CAR LISTINGS</span></h1>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <!--1st car-->
+                    <div class="swiper-slide featuredCars">
+                        <div class="containerForCars">
+                            <img src="/cars/JEEP-WRANGLER-RUBICON-.png" alt="jeep" class="jeep">
+                        </div>
+                        <div class="containerForDetails">
+                            
+                            
+                            <div class="specificationAPriceAction">
+                                <div class="specification">
+                                    <h1 class="carName">JEEP WRANGLER</h1>
+                                    <ul class="desc">
+                                        <li>CLASS: Comfort and Balance</li>
+                                        <li>360km/hr - off-road</li>
+                                        <li>MILEAGE: 1000km/hr</li>
+                                    </ul>    
+                                </div>
+                                <div class="priceBookNow">
+                                    <div class="price">
+                                        <button class="priceButton">PRICE</button><button class="amountButton">$200/day</button>
+                                    </div>
+                                    <div class="book">
+                                        <button class="bookNow">BOOK NOW</button>
+                                    </div>
+                                </div> 
+                            </div>     
+                        </div>
+                    </div>
+
+                    <!--second car-->
+                    <div class="swiper-slide featuredCars">
+                        <div class="containerForCars">
+                            <img src="/cars/audi.png" alt="jeep" class="jeep">
+                        </div>
+                        <div class="containerForDetails">
+                            
+                            <div class="specificationAPriceAction">
+                                <div class="specification">
+                                    <h1 class="carName">AUDI V8</h1>
+                                    <ul class="desc">
+                                        <li>CLASS: Comfortable</li>
+                                        <li>SPEED: 360km/hr</li>
+                                        <li>MILEAGE: 1000km/hr</li>
+
+                                    </ul>
+                                    
+                                </div>
+                                <div class="priceBookNow">
+                                    <div class="price">
+                                        <button class="priceButton">PRICE</button><button class="amountButton">$177/day</button>
+                                    </div>
+                                    <div class="book">
+                                        <button class="bookNow">BOOK NOW</button>
+                                    </div>
+                                </div> 
+                            </div>     
+                        </div>
+                    </div>
+
+                    <!--second car-->
+                    <div class="swiper-slide featuredCars">
+                        <div class="containerForCars">
+                            <img src="/cars/lamborghini.png" alt="jeep" class="jeep">
+                        </div>
+                        <div class="containerForDetails">
+                            
+                            <div class="specificationAPriceAction">
+                                <div class="specification">
+                                    <h1 class="carName">LAMBORGHINI</h1>
+                                    <ul class="desc">
+                                        <li>CLASS: Comfortable</li>
+                                        <li>SPEED: 360km/hr - flat</li>
+                                        <li>MILEAGE: 1000km/hr</li>
+                                    </ul>          
+                                </div>
+                                <div class="priceBookNow">
+                                    <div class="price">
+                                        <button class="priceButton">PRICE</button><button class="amountButton">$177/day</button>
+                                    </div>
+                                    <div class="book">
+                                        <button class="bookNow">BOOK NOW</button>
+                                    </div>
+                                </div> 
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <!--swiper pagination dots-->
+                <div class="swiper-pagination"></div>
+                        <!--
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                        -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="hdline-intro">
+                <div class="hdline">
+                    <h1><span class="hdTush">EASY RENTING</span>, HAPPY RIDE, <span class="hdTush las">FULLFILLED MOMENT</span> </h1>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p>looking for a smooth, affordable, and hassle-fre ride?
+                        wether its business, travel, or special occasions,
+                        we offer well-maintained vehicles that fulfills the
+                        moment. YOUR JOURNEY STARTS HERE
+                    </p>
+                </div>
+                <div class="icon-containers">
+                    <span><img src="/assets/call.png" alt="call" class="social"></span>
+                    <span><img src="/assets/fb.png" alt="call" class="social"></span>
+                    <span><img src="/assets/ig.png" alt="call" class="social"></span>
+                    <span><img src="/assets/x.png" alt="call" class="social"></span>
+                    
+                </div>
+            </div>
+
+        </div>
+    
+        
+ 
+
+
+        <div class="carListingContainer cont">
+            <div class="carListing">
+                <div class="car1 ">
+                    <div class="child">
+                        <img class="carlist" src="/cars/audi.png" alt="" width="50">
+                        <h1 class="carName">AUDI V8</h1>
+                        <button class="amountButton">DETAILS</button>
+                    </div>
+                    
+                </div>
+                <div class="car1">
+                    <div class="child">
+                        <img class="carlist" src="/cars/JEEP-WRANGLER-RUBICON-.png" alt="" width="50">
+                        <h1 class="carName">JEEP WRANGLER</h1>
+                        <button class="amountButton">DETAILS</button>
+                    </div>
+                </div>
+                <div class="car1">
+                    <div class="child">
+                        <img class="carlist" src="/cars/lamborghini.png" alt="" width="50">
+                        <h1 class="carName">LAMBORGHINI</h1>
+                        <button class="amountButton">DETAILS</button>
+                    </div> 
+                </div>
+                <div class="car1">
+                    <div class="child">
+                        <img class="carlist" src="/cars/porsche.webp" alt="" width="50">
+                        <h1 class="carName">PORSCHE</h1>
+                        <button class="amountButton">DETAILS</button>
+                    </div>                
+                </div>
+                <div class="car1">
+                    <div class="child">
+                        <img class="carlist" src="/cars/rolls royce.png" alt="" width="50">
+                        <h1 class="carName">ROLLS ROYCE</h1>
+                        <button class="amountButton">DETAILS</button>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+
+
+        <div class="formContainer cont">
+            <div class="formExactContainer">
+                <div><h1 class="formHead">we'd love to hear from you</h1></div>
+                <form action="" class="homepageForm">
+                    <label for="email"></label>
+                    <input class="emailInput" type="text" placeholder="your email"><br>
+            
+                    <label for="message"></label>
+                    <textarea name="" id="" placeholder="your message here"></textarea><br>
+        
+                    <button class="contactUs" type="submit">SUBMIT</button>
+                </form>
+            </div> 
+        </div>
+
+        <!--this is for about section-->
+        <div class="aboutContainer cont">
+            <div class="formExactContainer">
+                <h2 class="aboutHeadline">The Empire Car rental</h2>
+                <hr class="aboutHr">
+                <img src="/cars/about.jpg" alt="about" class="aboutImg">
+            </div>
+        </div>
+
+        
+
+        <a href="mailto:victorflawless7@gmail.com?subject=I (we) need car for our occassion"><button class="sendMail">SEND US MAIL</button></a>
+
+
+        <dialog class="infoDialog">
+            <div><button onclick="closeModal('infoDialog')" class="exitingDialogButton">x</button></div>
+            <div class="dialogDisplayContainer">
+                <div class="containerForCars">
+                    <img src="/cars/lamborghini.png" alt="jeep" class="jeep dialogImg">
+                </div>
+                <div class="containerForDetails ">
+                                
+                    <div class="specificationAPriceAction">
+                        <div class="specification">
+                            <h1 class="carName dialogCarname">LAMBORGHINI</h1>
+                            <ul class="desc">
+                                <li>CLASS: <span class="dialogF1">Comfortable</span></li>
+                                <li class="dialogF2">SPEED: <span class="perSpeed">360km/hr</span> </li>
+                                <li class="dialogF3">MILEAGE: <span class="perKilo">1000km/hr</span></li>
+                            </ul>          
+                        </div>
+                        <div class="priceBookNow">
+                            <div class="price">
+                                <button class="priceButton">PRICE</button><button class="amountButton">$ <span class="perDay">150</span> /day</button>
+                            </div>
+                            <div class="book">
+                                <button class="bookNow">BOOK NOW</button>
+                            </div>
+                        </div> 
+                    </div>     
+                </div>    
+            </div>
+            
+        </dialog>
+
+
+        <!--for payment and registration page-->
+        <dialog class="paymentDialog" style="z-index: 3;">
+            <div><button onclick="closeModal('paymentDialog')" class="exitingDialogButton">x</button></div>
+            <div class="dialogDisplayContainer secondDialog">
+                <div class="containerForCars">
+                    <img src="/cars/lamborghini.png" alt="jeep" class="jeep paymentdialogImg">
+                </div>
+                <div class="containerForDetails ">
+                                
+                    <div class="specificationAPriceAction paymentDialogContainer4Details">
+                        <div class="specification">
+                            <h1 class="carName paymentdialogCarname">LAMBORGHINI</h1>
+                            <ul class="desc">
+                                <li class="dialogF1 paymentD">CLASS: <span class="paymentdialogF1">Comfortable</span></li>
+                                <li class="dialogF2 paymentD">SPEED: <span class="paymentperSpeed">360km/hr</span> </li>
+                                <li class="dialogF3 paymentD">MILEAGE: <span class="paymentperKilo">1000km/hr</span></li>
+                            </ul>          
+                        </div>
+                        <div class="priceBookNow">
+                            <div class="price">
+                                <button class="priceButton">PRICE</button><button class="amountButton">$ <span class="paymentperDay">150</span> /day</button>
+                            </div>
+                            <!--booking details-->
+                            <div>
+                                <p class="bookingDetails">BOOKING DETAILS</p>
+                                <div class="startEndContainers">
+                                    <small>select start Date</small>
+                                    <input type="text" id="startDateInput" placeholder="Select a date"  style="z-index: 7;"/>
+                                    <span class="icon">🗓️</span>
+
+                                </div>
+                                <div class="startEndContainers">
+                                    <small>select End Date</small>
+                                    <input type="text" id="stopDateInput" placeholder="Select a date" style="z-index: 7;" />
+                                    <span class="icon">🗓️</span>
+                                </div>
+                                <div class="daysAmount">
+                                    <div class="daysAmount-Days">
+                                        <h1 class="noOfDays" id="noOfDays"></h1><p class="days">day(s)</p>
+                                    </div class="daysAmount-Amount">
+                                    <div class="amtDec">
+                                        <h1><span>$</span><span class="totalAmount" id="totalAmount"></span></h1>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="book">
+                                <button class="bookNow">PAY NOW</button>
+                            </div>
+                        </div> 
+                    </div>     
+                </div>    
+            </div>
+            
+        </dialog>
+    </center>
+
+    <script type="module" src="/jsfiles/swiper.js"></script>
+<script src="/jsfiles/homepage.js"></script> 
+</body>
+</html>
