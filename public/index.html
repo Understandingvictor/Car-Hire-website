@@ -13,7 +13,9 @@
     <center>
         <header>
             <div class="header">
-                <div><h1>DRIVE YOUR DREAM CAR</h1></div>
+                <div><h1>EMPIRE CAR HIRES</h1>
+                    <small>Drive your dream car | RC 1023456</small>
+                </div>
                 <div><img src="/cars/lamborghini.png" alt="lamborghini" width="70"></div>
             </div>            
         </header>
@@ -24,6 +26,8 @@
                 <button class="about btns" onclick="toggleContainers(2)"><li>About</li></button>
             </ul>
         </nav>
+
+        <!--HOMEPAGE CONTAINER-->
         <div class="homepageContainer">
                 <h1 class="featured">FEATURED <br><span>CAR LISTINGS</span></h1>
             <div class="swiper">
@@ -35,8 +39,6 @@
                             <img src="/cars/JEEP-WRANGLER-RUBICON-.png" alt="jeep" class="jeep">
                         </div>
                         <div class="containerForDetails">
-                            
-                            
                             <div class="specificationAPriceAction">
                                 <div class="specification">
                                     <h1 class="carName">JEEP WRANGLER</h1>
@@ -64,7 +66,6 @@
                             <img src="/cars/audi.png" alt="jeep" class="jeep">
                         </div>
                         <div class="containerForDetails">
-                            
                             <div class="specificationAPriceAction">
                                 <div class="specification">
                                     <h1 class="carName">AUDI V8</h1>
@@ -72,9 +73,7 @@
                                         <li>CLASS: Comfortable</li>
                                         <li>SPEED: 360km/hr</li>
                                         <li>MILEAGE: 1000km/hr</li>
-
                                     </ul>
-                                    
                                 </div>
                                 <div class="priceBookNow">
                                     <div class="price">
@@ -88,13 +87,12 @@
                         </div>
                     </div>
 
-                    <!--second car-->
+                    <!--third car-->
                     <div class="swiper-slide featuredCars">
                         <div class="containerForCars">
                             <img src="/cars/lamborghini.png" alt="jeep" class="jeep">
                         </div>
                         <div class="containerForDetails">
-                            
                             <div class="specificationAPriceAction">
                                 <div class="specification">
                                     <h1 class="carName">LAMBORGHINI</h1>
@@ -136,21 +134,10 @@
                         moment. YOUR JOURNEY STARTS HERE
                     </p>
                 </div>
-                <div class="icon-containers">
-                    <span><img src="/assets/call.png" alt="call" class="social"></span>
-                    <span><img src="/assets/fb.png" alt="call" class="social"></span>
-                    <span><img src="/assets/ig.png" alt="call" class="social"></span>
-                    <span><img src="/assets/x.png" alt="call" class="social"></span>
-                    
-                </div>
             </div>
-
         </div>
-    
-        
- 
 
-
+                <!--CARLISTING SECTION-->
         <div class="carListingContainer cont">
             <div class="carListing">
                 <div class="car1 ">
@@ -159,7 +146,6 @@
                         <h1 class="carName">AUDI V8</h1>
                         <button class="amountButton">DETAILS</button>
                     </div>
-                    
                 </div>
                 <div class="car1">
                     <div class="child">
@@ -189,41 +175,45 @@
                         <button class="amountButton">DETAILS</button>
                     </div>
                 </div>
-
             </div>
-        
         </div>
 
-
+                <!--FORM SECTION-->
         <div class="formContainer cont">
             <div class="formExactContainer">
                 <div><h1 class="formHead">we'd love to hear from you</h1></div>
                 <form action="" class="homepageForm">
                     <label for="email"></label>
-                    <input class="emailInput" type="text" placeholder="your email"><br>
+                    <input autocomplete="email" class="emailInput" id="email" type="text" placeholder="your email"><br>
             
                     <label for="message"></label>
-                    <textarea name="" id="" placeholder="your message here"></textarea><br>
+                    <textarea autocomplete="message" name="" id="message" placeholder="your message here"></textarea><br>
         
                     <button class="contactUs" type="submit">SUBMIT</button>
                 </form>
             </div> 
         </div>
 
-        <!--this is for about section-->
+        <!--ABOUT SECTION-->
         <div class="aboutContainer cont">
             <div class="formExactContainer">
-                <h2 class="aboutHeadline">The Empire Car rental</h2>
+                <h2 class="aboutHeadline">CONTACT EMPIRE CAR HIRES</h2>
                 <hr class="aboutHr">
                 <img src="/cars/about.jpg" alt="about" class="aboutImg">
             </div>
         </div>
 
-        
-
+        <div class="icon-containers">
+            <a href="#"><span class="socialIconContainer"><img src="/assets/fb.png" alt="call" class="social"></span></a>
+            <a href="#"><span class="socialIconContainer"><img src="/assets/ig.png" alt="call" class="social"></span></a>
+            <a href="#"><span class="socialIconContainer"><img src="/assets/call.png" alt="call" class="social"></span></a>
+            <a href="#"><span class="socialIconContainer"><img src="/assets/x.png" alt="call" class="social"></span></a>
+            <span class="socialIconContainer right" onclick="sideSocialMenu()"><h1 class="arrowRight rightt">></h1><h1 class="arrowRight leftt"><</h1></span>
+        </div>
         <a href="mailto:victorflawless7@gmail.com?subject=I (we) need car for our occassion"><button class="sendMail">SEND US MAIL</button></a>
 
 
+        <!--DIALOGS-->
         <dialog class="infoDialog">
             <div><button onclick="closeModal('infoDialog')" class="exitingDialogButton">x</button></div>
             <div class="dialogDisplayContainer">
@@ -231,7 +221,6 @@
                     <img src="/cars/lamborghini.png" alt="jeep" class="jeep dialogImg">
                 </div>
                 <div class="containerForDetails ">
-                                
                     <div class="specificationAPriceAction">
                         <div class="specification">
                             <h1 class="carName dialogCarname">LAMBORGHINI</h1>
@@ -252,12 +241,11 @@
                     </div>     
                 </div>    
             </div>
-            
         </dialog>
 
 
         <!--for payment and registration page-->
-        <dialog class="paymentDialog" style="z-index: 3;">
+        <dialog class="paymentDialog">
             <div><button onclick="closeModal('paymentDialog')" class="exitingDialogButton">x</button></div>
             <div class="dialogDisplayContainer secondDialog">
                 <div class="containerForCars">
@@ -279,22 +267,23 @@
                                 <button class="priceButton">PRICE</button><button class="amountButton">$ <span class="paymentperDay">150</span> /day</button>
                             </div>
                             <!--booking details-->
-                            <div>
+                            <div class="forBookingSectionSide">
                                 <p class="bookingDetails">BOOKING DETAILS</p>
                                 <div class="startEndContainers">
                                     <small>select start Date</small>
-                                    <input type="text" id="startDateInput" placeholder="Select a date"  style="z-index: 7;"/>
+                                    <input type="text" id="startDateInput" placeholder="Select a date"/>
                                     <span class="icon">🗓️</span>
-
                                 </div>
                                 <div class="startEndContainers">
                                     <small>select End Date</small>
-                                    <input type="text" id="stopDateInput" placeholder="Select a date" style="z-index: 7;" />
+                                    <input type="text" id="stopDateInput" placeholder="Select a date" />
                                     <span class="icon">🗓️</span>
                                 </div>
                                 <div class="daysAmount">
                                     <div class="daysAmount-Days">
-                                        <h1 class="noOfDays" id="noOfDays"></h1><p class="days">day(s)</p>
+                                        <h1 class="noOfDays" id="noOfDays"></h1> 
+                                        <div class="days"><small class="days">days</small> </div>
+                                        
                                     </div class="daysAmount-Amount">
                                     <div class="amtDec">
                                         <h1><span>$</span><span class="totalAmount" id="totalAmount"></span></h1>
@@ -308,10 +297,11 @@
                     </div>     
                 </div>    
             </div>
-            
         </dialog>
     </center>
 
+            <!--SCRIPTS-->
+    <script src="jsfiles/sideButton.js"></script>
     <script type="module" src="/jsfiles/swiper.js"></script>
 <script src="/jsfiles/homepage.js"></script> 
 </body>

@@ -65,6 +65,7 @@ button.carButton, button.contact, button.about{
     transition: transform 2s ease;
     cursor: pointer;
 }
+
 button.carButton:hover, button.contact:hover, button.about:hover{
     transform: scale(1.5);
     background-color:  rgb(94, 62, 4);
@@ -368,8 +369,7 @@ img.social{
     font-weight: bolder;
     background-color: rgb(94, 62, 4);
     color: white;
-    border-radius: 10px;
-    opacity: 80%;
+    max-width: 60%;
 }
 
 /* for dialog*/
@@ -389,6 +389,7 @@ img.social{
     opacity: 50%;
 }
 .paymentDialog{
+    z-index: 10000;
     min-width: 90%;
     min-height: 80%;
     align-items: baseline;
@@ -413,9 +414,6 @@ img.social{
     overflow: hidden;
     border: none ;
     
-}
-.flatpickr{
-    z-index: 9999 !important;
 }
 .days{
     text-align: center;
@@ -449,6 +447,7 @@ img.social{
 input{
     border: 2px solid rgb(158, 105, 6);
     border-radius: 5px;
+    padding: 5px;
 }
 .paymentDialogContainer4Details{
     opacity: 10%;
@@ -458,6 +457,52 @@ input{
     font-style: italic;
     font-family: mont2;
 }
+.icon-containers{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 3px 5px rgb(94, 62, 4);
+    top: 35%;
+    z-index: 9999;
+    padding: 10px 10px;
+    border-radius: 10px;
+    align-items: center;
+    transition: transform 1s ease;
+    
+}
+.slate{
+    transform: translateX(-80%);
+}
+.socialIconContainer{
+    gap: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.right{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(94, 62, 4);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.arrowRight{
+    font-size: large;
+    font-weight: 300;
+}
+.show{
+    display: none;
+}
+
+
 
 @media (min-width: 768px) {
     header{
@@ -545,6 +590,9 @@ hr{
     margin-top: 15px;
 }
 .icon-containers{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
     margin-top: 20px;
     justify-content: space-around;
 }
@@ -580,7 +628,6 @@ hr{
         justify-content: center;
         box-shadow:rgb(94, 62, 4) 0  0px 5px 0px;
         border-radius: 5px; 
-        margin-bottom: 30px;
     }
     .hdline{
         font-family: mont1;
@@ -605,7 +652,8 @@ hr{
         margin-top: 15px;
     }
     .icon-containers{
-        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         justify-content: space-around;
     }
 

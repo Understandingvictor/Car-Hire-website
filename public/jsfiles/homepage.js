@@ -250,7 +250,8 @@ function openModal(whichDialog){
         selectedStart = dateStr;
         calculateDifference();
       },
-   
+      appendTo: document.querySelector('.paymentDialogContainer4Details'),
+      static: true
     });
 
     const picker2 = flatpickr("#stopDateInput", {
@@ -260,7 +261,10 @@ function openModal(whichDialog){
       onChange: function(selectedDates, dateStr) {
         selectedEnd = dateStr;
         calculateDifference();
-      }
+      },
+      appendTo: document.querySelector('.paymentDialogContainer4Details'),
+      static: true
+
     });
 
     //this function clears input in the booking details section og the payment dialog
