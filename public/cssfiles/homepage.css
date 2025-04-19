@@ -16,6 +16,13 @@
 html, body{
     height: 100%;
 }
+.logoContainer{
+    max-width: 15%;
+    max-height: 100%;
+}
+.logoPics{
+    width: 100%;
+}
 header{
     box-shadow: 0  0px 7px 0px;
     margin: 10px;
@@ -27,9 +34,10 @@ header{
 }
 div.header{
     display: flex;
-    align-items: last baseline;
+    align-items: last center;
     padding: 0;
     margin: 0;
+    gap: 2%;
 }
 nav{
     margin-top: 3%;
@@ -512,6 +520,16 @@ input{
         border-radius: 0px;
         border: none;
         box-shadow: none;
+    }
+    div.header{
+        display: flex;
+        align-items: last baseline;
+        padding: 0;
+        margin: 0;
+    }
+    .logoContainer{
+        max-width: 5%;
+        max-height: 100%;
     }
     button.carListing, button.contact, button.about{
         font-family: mont1;
